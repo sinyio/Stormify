@@ -1,2 +1,64 @@
-# env files (can opt-in for committing if needed)
-.env*
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Flask
+instance/
+*.sqlite
+*.db
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+
+# Distribution / packaging
+.Python
+build/
+dist/
+develop-eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+*.whl
+*.egg
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+*.sql
+
+# OS or Editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+*.bak
+
+# Static files
+static/
+.sass-cache/
+
+# Other
+*.ini
+*.orig
+
+# Secrets
+*.env
+.env
+*.secret
+*.key
+*.pem
