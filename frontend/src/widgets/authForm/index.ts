@@ -1,1 +1,2 @@
-export * from "./components/AuthFormWidget";
+export * from "./ui";
+

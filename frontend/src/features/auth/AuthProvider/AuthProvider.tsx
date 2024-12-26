@@ -1,10 +1,11 @@
-import React, {
+import {
   createContext,
   useState,
   useContext,
   ReactNode,
   useEffect,
   useCallback,
+  FC,
 } from "react";
 import { AuthResponse, User } from "@/entities/user";
 import axios from "axios";
@@ -27,9 +28,7 @@ const AuthContext = createContext<AuthContextProps>({
   refreshToken: async () => {},
 });
 
-export const AuthProvider: React.FC<{ children: ReactNode }> = ({
-  children,
-}) => {
+export const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [token, setToken] = useState<string | null>(null);
   const [user, setUser] = useState<User | null>(null);
   const [refreshTokenValue, setRefreshTokenValue] = useState<string | null>(

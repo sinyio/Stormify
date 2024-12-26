@@ -8,7 +8,7 @@ interface useFetchSearchHistoryProps {
   onError?: (error: any) => void;
 }
 
-const useFetchSearchHistory = ({
+export const useFetchSearchHistory = ({
   onSuccess,
   onError,
 }: useFetchSearchHistoryProps = {}) => {
@@ -53,5 +53,3 @@ const useFetchSearchHistory = ({
 
   return { history, loading };
 };
-
-export default useFetchSearchHistory;

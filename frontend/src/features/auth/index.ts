@@ -1,3 +1,3 @@
 export { AuthProvider, useAuth } from "./AuthProvider";
-export * from "./components";
+export * from "./ui";
 export * from "./model";

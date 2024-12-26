@@ -1,5 +1,5 @@
 import axios from "axios";
-import { withAuthRetry } from "@/utils/withAuthRetry";
+import { withAuthRetry } from "@/shared/utils/withAuthRetry";
 
 export const fetchWeatherForecast = async (
   city: string,
